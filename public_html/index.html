@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery UI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="js/libs/jqueryui/css/jquery-ui.min.css"> 
+        <style>
+        </style>
+    </head>
+    <body>
+
+        <h1>通常のボタン類</h1>
+        <div class="normal-ui">
+            <a href="#">アンカー(aタグ)</a>
+            <button>ボタン(buttonタグ)</button>
+            <input type="submit" value="送信ボタン(inputタグ type=submit)">
+        </div>
+
+        <h1>jQuery UIのボタン類</h1>
+        <div class="jquery-ui">
+            <a href="#">アンカー(aタグ)</a>
+            <button>ボタン(buttonタグ)</button>
+            <input type="submit" value="送信ボタン(inputタグ type=submit)">
+        </div>
+
+
+        <script src="js/libs/jquery/jquery.min.js"></script>
+        <script src="js/libs/jqueryui/jquery-ui.min.js"></script>
+        <script>
+            $(function() {
+                $(".jquery-ui *").button();
+            });
+        </script>
+    </body>
+</html>
